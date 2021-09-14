@@ -1,0 +1,19 @@
+.footer {
+    width: 92.5%;
+    margin: 92px auto 24px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 732px) {
+    .footer {
+        width: 92.5%;
+        margin: 64px 0 24px 16px;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+} 
