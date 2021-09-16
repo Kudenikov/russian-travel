@@ -3,9 +3,30 @@
     height: 740px;
     background-image: url(../../images/cover__background.jpg);
     background-size: cover;
+    position: relative;
     margin: 92px auto 0;
     padding: 0;
-    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2A2C2F;
+    opacity: .3;
+    z-index: 1;
+    transition: opacity 1s ease-in;
+}
+
+.cover:hover::after {
+    opacity: .8;
 }
 
 @media screen and (max-width: 1184px) {
