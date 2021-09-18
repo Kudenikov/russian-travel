@@ -1,6 +1,6 @@
 .places__url-heading {
     color: #AAAAAA;
-    font-family: 'Inter';
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 12px;
@@ -8,4 +8,11 @@
     letter-spacing: 2px;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
+
+@media screen and (max-width: 767px) {
+    .places__url-heading {
+        margin: 0 0 0 16px;
+    }
+} 

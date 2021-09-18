@@ -1,5 +1,5 @@
 .footer {
-    width: 92.5%;
+    max-width: calc(100% - 96px);
     margin: 92px auto 24px;
     color: #FFFFFF;
     display: flex;
@@ -7,12 +7,15 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 732px) {
+@media screen and (max-width: 1023px) {
     .footer {
-        width: 92.5%;
+        max-width: calc(100% - 48px);
+        margin: 88px auto 24px;
+    }
+} 
+@media screen and (max-width: 767px) {
+    .footer {
         margin: 64px 0 24px 16px;
-        color: #FFFFFF;
-        display: flex;
         flex-direction: column;
         justify-content: start;
     }
