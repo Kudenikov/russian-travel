@@ -3,6 +3,7 @@
     min-height: 740px;
     background-image: url(../../../images/cover__background.jpg);
     background-size: cover;
+    background-position: center;
     position: relative;
     margin: 92px auto 0;
     padding: 0;
